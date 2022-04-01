@@ -8,6 +8,8 @@ import 'package:project1/list_latihan.dart';
 import 'package:project1/registerScreen.dart';
 import 'package:project1/stack.dart';
 
+import 'model/listPilm.dart';
+
 class loginScreen extends StatefulWidget {
   const loginScreen({Key? key}) : super(key: key);
 
@@ -73,7 +75,7 @@ class _loginScreenState extends State<loginScreen> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => ListScreen()
+                          builder: (context) => listPilm()
                       )
                   );
                 },
